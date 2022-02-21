@@ -254,7 +254,7 @@ header .btn-group {
     overscroll-behavior: contain;
     transform: translateX(100%);
     visibility: hidden;
-    /* transition: 0.5s cubic-bezier(1, 0, 0.30, 0.70); */
+    transition: 0.5s cubic-bezier(1, 0, 0.30, 0.70); /*bilo je zatvoreno dok nije upisan js kod*/
     z-index: 10;
 }
 
