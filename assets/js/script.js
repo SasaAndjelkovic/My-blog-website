@@ -1,9 +1,9 @@
 'use strict';
 
 //navbar variables
-const nav = document.querySelector('mobile-nav');
-const navMenuBtn = document.querySelector('nav-menu-btn');
-const navCloseBtn = document.querySelector('nav-close-btn');
+const nav = document.querySelector('.mobile-nav');
+const navMenuBtn = document.querySelector('.nav-menu-btn');
+const navCloseBtn = document.querySelector('.nav-close-btn');
 
 
 // navToggle function 
