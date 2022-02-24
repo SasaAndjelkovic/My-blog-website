@@ -615,4 +615,117 @@ footer .wrapper { text-align: center; }
         align-items: start;
         gap: 0;
     }
+
+
+    /*
+    * FOOTER
+    */
+
+    footer .container {
+        padding: var(--py) 30px;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    footer .wrapper { text-align: left; }
+
+    .footer-text { margin: 0; }
+}
+
+
+/*
+*responsive for larger than 768px screen
+*/
+
+@media (min-width: 768px) {
+
+    /*
+    * REUSED STYLE
+    */
+
+    .container { max-width: 800px; }
+}
+
+
+/*
+*responsive for larger than 1024px screen
+*/
+
+@media (min-width: 1024px) {
+
+    :root {
+
+        /*
+        *typography
+        */
+
+        --fs-base: 1rem;
+        --fs-1: 3 rem;
+    }
+
+    /*
+    * REUSED STYLE
+    */
+
+    .container { max-width: 1150px; }
+
+    /*
+    * HEADER
+    */
+
+    header .btn-group { display: none; }
+
+    header .flex-wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .desktop-nav .nav-link {
+        color: var(--foreground-secondary);
+        font-weight: 700;
+    }
+
+    .desktop-nav .nav-link:hover { color: var(--accent); }
+
+    .theme-btn-desktop {
+        position: relative;
+        background: var(--background-secondary);
+        color: var(--white);
+        width: 52px;
+        height: 26px; /*prvo je bilo 25px*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+    }
+
+    .theme-btn-desktop.light {
+        background: linear-gradient(45deg, hsl(7, 100%, 71%), hsl(46, 100%, 65%));
+    }
+
+    .theme-btn-desktop.dark {
+        background: linear-gradient(45deg, hsl(225, 100%, 60%), hsl(296, 80%, 40%));
+    }
+
+    .theme-btn-desktop::before {
+        content: '';
+        position: absolute;
+        background: var(--white);
+        width: 21px;
+        height: 21px;
+        border-radius: 30px;
+        top: 50%;
+        left: 3px;
+        transform: translateY(-50%);
+        box-shadow: 0 2px 10px -2px hsla(0, 0%, 0%, 0.05);
+        z-index: 2;
+    }
+
+    .theme-btn-desktop.dark::before {left: calc(100% - 24px); }
 }
