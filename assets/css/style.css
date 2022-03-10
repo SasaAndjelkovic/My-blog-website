@@ -140,7 +140,7 @@ html {
 .h3, 
 .h4 {
     display: block;
-    color: var(--foreground-primary)
+    color: var(--foreground-primary);
 }
 
 .h1 {
@@ -208,8 +208,7 @@ html {
     #Extra style for dark theme
 \*-----------------------------------*/
 
-.dark-theme .btn-primary:hover { color: var
-    var(--background-primary); }
+.dark-theme .btn-primary:hover { color: var(--background-primary); }
 
 .dark-theme .blog-topic {
     background: var(--action-primary);
@@ -224,6 +223,8 @@ html {
 .dark-theme .load-more:hover { color: var(--white); }
 
 .dark-theme .aside .h2 { color: var(--foreground-primary); }
+
+
 /*--------------------------------*\
     #HEADER
 \*--------------------------------*/
