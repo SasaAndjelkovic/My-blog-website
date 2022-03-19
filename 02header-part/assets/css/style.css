@@ -1,4 +1,4 @@
-.header {
+header {
     --background-primary: hsl(0, 0%, 100%);
     --background-secondary: hsl(0, 0%, 97%);
 
@@ -14,7 +14,7 @@
 :root {
 
     --white: hsl(0, 0%, 100%);
-    
+
     --fs-base: 0.85rem;
 
     --fs-2: 1.5rem;
@@ -56,7 +56,7 @@ html {
 }
 
 .h3 {
-    font-size: var(--fs-2);
+    font-size: var(--fs-3);
     font-weight: 700;
 }
 
@@ -73,7 +73,7 @@ html {
 
 header { background: var(--backround-primery); }
 
-header .flex-wrapper { display: none; }
+header .desknav-wrapper { display: none; }
 
 .navbar {
     display: flex;
@@ -161,17 +161,19 @@ header .logo-light { display: block; }
 .mobile-nav .nav-link:hover { color: var(--accent)}
 
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
 
     :root {
         --fs-base: 1rem;
+        --fs-1: 3rem;
     }
 
     .container { max-width: 1150px; };
 
-    header .btn-group { display: none }
+    .btn-group { display: none; }
+    header .btn-group { display: none; }
 
-    header .flex-wrapper {
+    header .desknav-wrapper {
         display: flex;
         gap: 30px;
     }
@@ -203,7 +205,7 @@ header .logo-light { display: block; }
     }
 
     .theme-btn-desktop.light {
-        background: linear-gradient(45deg, hsl(7, 100%. 71%), hsl(46, 100%, 65%));
+        background: linear-gradient(45deg, hsl(7, 100%, 71%), hsl(46, 100%, 65%));
     }
 
     .theme-btn-desktop::before {
@@ -216,7 +218,7 @@ header .logo-light { display: block; }
         top: 50%;
         left: 3px;
         transform: translateY(-50%);
-        box-shadow: 0 2px 10px -2px (0, 0%, 0.05);
+        box-shadow: 0 2px 10px -2px hsla(0, 0%, 0%, 0.05);
         z-index: 2;
     }
 }

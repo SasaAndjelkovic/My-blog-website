@@ -762,7 +762,7 @@ footer .wrapper { text-align: center; }
     }
 
     .theme-btn-desktop.dark::before {left: calc(100% - 24px); }
-
+    
     /*
     *HERO
     */
@@ -819,14 +819,14 @@ footer .wrapper { text-align: center; }
         border-radius: 50%;
         transform: translate(-50%, -42%) rotate(-20deg);
     }
-
+*//*
     .hero .shape-1 {
         background: var(--accent);
         width: 90%;
         height: 90%;
         z-index: -1;
     }
-
+*//*
     .hero .shape-2 {
         width: 92%;
         height: 92%;
