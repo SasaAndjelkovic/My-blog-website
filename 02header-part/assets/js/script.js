@@ -3,7 +3,6 @@
 const nav = document.querySelector('.mobile-nav');
 const navMenuBtn = document.querySelector('.nav-menu-btn');
 const navCloseBtn = document.querySelector('.nav-close-btn');
-console.log(nav, navMenuBtn, navCloseBtn);
 
 const navToggleFunc = () => { nav.classList.toggle('active'); }
 

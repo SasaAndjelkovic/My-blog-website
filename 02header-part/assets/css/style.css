@@ -63,6 +63,14 @@ html {
 
 :fokus { outline-offset: 4px; }
 
+::scrollbar { width: 16px; }
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+
+
 .h3 {
     display: block;
     color: var(--foreground-primary);
