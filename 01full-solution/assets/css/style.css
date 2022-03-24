@@ -8,11 +8,12 @@
   #CUSTOM PROPERTY
 \*--------------------------------*/
 
-.light-theme {
 
-    /*
+/*
     * light theme colors
     */
+
+.light-theme {
 
     --background-primary: hsl(0, 0%, 100%);
     --background-secondary: hsl(0, 0%, 97%);
@@ -28,11 +29,12 @@
 
 }
 
-.dark-theme { 
 
-    /*
+ /*
     * dark theme colors
     */
+
+.dark-theme { 
     
     --background-primary: hsl(218, 23%, 23%);
     --background-secondary: hsl(220, 26%, 14%);
