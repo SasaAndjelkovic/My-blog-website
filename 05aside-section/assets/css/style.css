@@ -13,6 +13,8 @@
 }
 
 :root {
+    --white: rgb(255, 255, 255);
+
     --fs-base: 0.85rem;
     --fs-2: 1.5rem;
     --fs-5: 0.75rem;
@@ -138,7 +140,7 @@ tags
 contact
 */
 
-.contact { margin-bottom: 3rem; };
+.contact { margin-bottom: 3rem; }
 
 .contact p {
     color: var(--foreground-secondary);
@@ -161,6 +163,72 @@ contact
     justify-content: center;
     align-items: center;
     font-size: 22px;
+}
+
+.social-link .linkedin { color: rgb(10, 102, 194); }
+
+.socail-link .instagram { color: rgb(12, 132, 207); }
+
+.social-link .facebook { color: rgb(66, 104, 179); }
+
+.social-link .icon-box:hover {
+    background: var(--accent);
+    color: var(--white);
+}
+
+/*
+newsletter
+*/
+
+.newsletter {
+    position: sticky;
+    top: 3rem;
+    margin-bottom: 98px;
+}
+
+.newsletter p {
+    color: var(--foreground-secondary);
+    margin-bottom: 1rem;
+}
+
+.newsletter input {
+    border: none;
+    background: var(--action-primary);
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    color: var(--foreground-secondary);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.newsletter input::placeholder { color: inherit; }
+
+.newsletter input:fokus {
+    outline: 2px solid;
+    outline-offset: 0;
+}
+
+.btn {
+    min-width: 10rem;
+    border-radius: 100px;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.6875rem 1.1875rem;
+}
+
+.btn-primary:hover {
+    background: var(--foreground-secondary);
+    color: var(--action-primary);
+}
+
+.newsletter .btn-primary {
+    margin-inline: auto;
+    margin: auto;
 }
 
 
